@@ -1,4 +1,6 @@
-# Ruby Quiz CLI
+# Made with mostly with Cursor, as a way to wake your fingers up in the morning. 
+
+## Ruby Quiz CLI
 
 A command-line quiz application to test your Ruby knowledge! This interactive quiz covers various Ruby objects and their methods, helping you master Ruby's core functionality.
 
@@ -112,12 +114,3 @@ test_string.include?('lo')
 - Handles code evaluation
 - Provides immediate feedback
 
-## Contributing
-
-Feel free to contribute by:
-- Adding more questions
-- Improving existing questions
-- Adding new Ruby object types
-- Enhancing the user interface
-- Adding test cases
-- Improving explanations 
