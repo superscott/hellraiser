@@ -78,6 +78,27 @@ The quiz is organized into three main files:
 - Score tracking
 - Random question order for varied practice
 - Separated questions and answers for better learning
+- **Hints available after incorrect answers**
+- **Option to see the full answer and explanation after at least one incorrect attempt**
+- **Retry questions up to 3 times, or practice after seeing the answer (no points)**
+- **View your stats after each question**
+- **Flexible menu after each incorrect answer: retry, show hint, show answer, view stats, or move on**
+- **Only first correct answers (before seeing the answer) count towards your score and stats**
+
+## Quiz Flow
+
+1. Each round consists of 5 random questions.
+2. For each question:
+   - You have up to 3 attempts to answer correctly.
+   - After an incorrect answer, you can:
+     - Try again (if attempts remain)
+     - See a hint (the method name being tested)
+     - See the answer and explanation (after at least one incorrect attempt; counts as incorrect)
+     - View your current stats (then move to the next question)
+     - Move to the next question
+   - After seeing the answer, you can retry for practice (no points awarded).
+3. After each round, you can view your stats and choose to continue or exit.
+4. Your score only increases if you answer correctly before seeing the answer.
 
 ## How It Works
 
@@ -85,7 +106,9 @@ The quiz is organized into three main files:
 2. You write actual Ruby code using the provided variable
 3. Your code is evaluated in real-time
 4. You get immediate feedback on your answer
-5. An explanation of the correct method is provided
+5. You can view a hint or the full answer if you get stuck
+6. An explanation of the correct method is provided
+7. You can view your stats at any time after a question
 
 ## Example Question
 
