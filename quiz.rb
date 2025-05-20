@@ -161,6 +161,12 @@ class RubyQuiz
       q.modify :strip
     end
 
+
+    if answer.strip.downcase == 'exit' || answer.strip.downcase == 'quit'
+      display_final_stats
+      exit(0)
+    end
+
     check_answer(answer, answer_data)
   end
 
@@ -286,4 +292,9 @@ class RubyQuiz
 end
 
 # Start the quiz
-RubyQuiz.new.run 
+begin
+  RubyQuiz.new.run
+rescue Interrupt
+  puts "\n\nExiting quiz...".colorize(:yellow)
+  exit(0)
+end
