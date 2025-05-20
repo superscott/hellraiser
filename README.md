@@ -1,4 +1,8 @@
-# Made with mostly with Cursor, as a way to wake your fingers up in the morning. 
+## About This Project
+In in an effort to wake my fingers up in the morning, I wanted to create a Ruby Quiz with easy questions to help with keyboard finger memory placement.
+I also wanted a way to create a quiz to which I did not already know the answers, so I used **Cursor**.
+This project was created with significant help from **Cursor**, an AI-powered coding assistant. Cursor provided guidance, code generation, and productivity boosts throughout the development process, making it the main productive force behind this Ruby Quiz CLI.
+
 
 ## Ruby Quiz CLI
 
@@ -14,44 +18,19 @@ The quiz is organized into three main files:
 ## Objects Covered
 
 ### String Methods
-- `include?` - Check if string contains substring
-- `upcase` - Convert string to uppercase
-- `strip` - Remove leading/trailing whitespace
-- `split` - Split string into array using delimiter
-- `gsub` - Global string substitution
-- `length` - Get string length
+- 6 methods covered
 
 ### Array Methods
-- `pop` - Remove and return last element
-- `uniq` - Remove duplicate elements
-- `sort` - Sort elements
-- `push` - Add element to end of array
-- `first` - Get first element
-- `reverse` - Reverse array order
+- 6 methods covered
 
 ### Hash Methods
-- `key?` - Check if key exists
-- `values` - Get array of all values
-- `keys` - Get array of all keys
-- `fetch` - Get value with default option
-- `merge` - Combine two hashes
-- `empty?` - Check if hash is empty
+- 6 methods covered
 
 ### Integer Methods
-- `even?` - Check if number is even
-- `abs` - Get absolute value
-- `odd?` - Check if number is odd
-- `next` - Get next integer
-- `positive?` - Check if number is positive
-- `to_f` - Convert to float
+- 6 methods covered
 
 ### Enumerable Methods
-- `map` - Transform each element
-- `select` - Filter elements by condition
-- `any?` - Check if any element matches condition
-- `all?` - Check if all elements match condition
-- `reduce` - Reduce collection to single value
-- `find` - Get first element matching condition
+- 6 methods covered
 
 ## Installation
 
