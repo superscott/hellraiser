@@ -15,6 +15,7 @@ class RubyQuiz
     @questions = QuizQuestions::QUESTIONS
     @answers = QuizAnswers::ANSWERS
     @current_round = 1
+    @asked_indices = []
   end
 
   def run
@@ -47,11 +48,18 @@ class RubyQuiz
       round_score = 0
       round_questions = 0
       
-      # Get all questions paired with their answers and shuffle them
-      questions_with_answers = @questions.zip(@answers).shuffle
-      
-      # Take only QUESTIONS_PER_ROUND questions for this round
-      round_questions_with_answers = questions_with_answers.take(QUESTIONS_PER_ROUND)
+      # Get indices of questions not yet asked
+      remaining_indices = (0...@questions.size).to_a - @asked_indices
+      if remaining_indices.size < QUESTIONS_PER_ROUND
+        puts "\nNo more new questions available. You've completed the quiz!".colorize(:green)
+        display_final_stats
+        exit(0)
+      end
+
+      # Randomly select QUESTIONS_PER_ROUND indices from remaining
+      round_indices = remaining_indices.sample(QUESTIONS_PER_ROUND)
+      @asked_indices.concat(round_indices)
+      round_questions_with_answers = round_indices.map { |i| [@questions[i], @answers[i]] }
       
       round_questions_with_answers.each do |question, answer|
         attempts_remaining = 3
